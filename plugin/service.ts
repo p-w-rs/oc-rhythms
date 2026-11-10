@@ -6,7 +6,7 @@ import { ACCESS, DEFAULT_MCP, OAUTH, REFRESH, SECRET_NAMES, type Account, type D
 import { AccountStore } from "./store.js"
 
 export const PLUGIN_ID = "oc-rhythms"
-export const VERSION = "0.1.0"
+export const VERSION = "1.0.0"
 const SERVICE = "Rhythms"
 /** Scopes for identity and refresh; Rhythms grants workspace access by the sign-in itself. */
 const SCOPES = ["openid", "profile", "email", "offline_access"]

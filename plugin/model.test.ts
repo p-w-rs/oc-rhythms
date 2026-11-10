@@ -6,7 +6,7 @@ import { setupHint } from "./service.js"
 import { searchActions } from "./tools.js"
 
 test("accounts: email normalized and validated", () => {
-  assert.deepEqual(normalizeAccount({ id: "work", email: "Joshua.Powers@ASI.example " }, new Date(0)), { id: "work", email: "joshua.powers@asi.example", updatedAt: "1970-01-01T00:00:00.000Z" })
+  assert.deepEqual(normalizeAccount({ id: "work", email: "Pat.Lee@ACME.example " }, new Date(0)), { id: "work", email: "pat.lee@acme.example", updatedAt: "1970-01-01T00:00:00.000Z" })
   assert.throws(() => normalizeAccount({ id: "w", email: "nope" }), /email/)
   assert.throws(() => normalizeAccount({ id: "w", token: "x" }), /Unknown account field/)
   assert.throws(() => normalizeAccount({ id: "bad id" }), /account id/)
