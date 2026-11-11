@@ -1,6 +1,6 @@
 [workspace]
 name = "oc-rhythms"
-version = "1.0.2"
+version = "1.0.3"
 description = "Rhythms (OKRs, check-ins, documents) for OpenCode agents"
 channels = ["conda-forge"]
 platforms = ["osx-arm64", "osx-64", "linux-64", "linux-aarch64"]
